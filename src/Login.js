@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button, Form, FormGroup, Input, Label } from 'reactstrap';
 
-function handleSubmit(e) {
-  console.log(e)
-}
 export default function Login() {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  function handleSubmit(e) {
+    e.preventDefault();
+    console.log(email, password);
+  }
   return (
     <div className="App">
       <h2>Sign In</h2>
-      <Form className="form" onSubmit={handleSubmit}>
+      <Form className="form">
         <FormGroup>
           <Label for="exampleEmail">Username : </Label>
           <Input
@@ -16,6 +19,7 @@ export default function Login() {
             name="email"
             id="exampleEmail"
             placeholder="example@example.com"
+            onChange={(e) => setEmail(e.target.value)}
           />
         </FormGroup>
         <FormGroup>
@@ -25,9 +29,10 @@ export default function Login() {
             name="password"
             id="examplePassword"
             placeholder="********"
+            onChange={(e) => setPassword(e.target.value)}
           />
         </FormGroup>
-        <Button color="primary" type="submit">
+        <Button color="primary" type="submit" onClick={handleSubmit}>
           Login
         </Button>
         <Button color="success">Register</Button>
