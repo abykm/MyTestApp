@@ -1,3 +1,4 @@
+import React from 'react';
 import { Button, Form, FormGroup, Input, Label } from 'reactstrap';
 
 export default function Login() {
@@ -6,7 +7,7 @@ export default function Login() {
       <h2>Sign In</h2>
       <Form className="form">
         <FormGroup>
-          <Label for="exampleEmail">Username</Label>
+          <Label for="exampleEmail">Username : </Label>
           <Input
             type="email"
             name="email"
@@ -15,7 +16,7 @@ export default function Login() {
           />
         </FormGroup>
         <FormGroup>
-          <Label for="examplePassword">Password</Label>
+          <Label for="examplePassword">Password : </Label>
           <Input
             type="password"
             name="password"
@@ -23,7 +24,8 @@ export default function Login() {
             placeholder="********"
           />
         </FormGroup>
-        <Button>Submit</Button>
+        <Button color="primary">Submit</Button>
+        <Button>Register</Button>
       </Form>
     </div>
   );

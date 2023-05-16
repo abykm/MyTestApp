@@ -5,8 +5,7 @@ import Login from './Login';
 export default function App() {
   return (
     <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen12343 :)</p>
+      <h1>My App</h1>
       <Login />
     </div>
   );
