@@ -35,7 +35,9 @@ export default function Login() {
         <Button color="primary" type="submit" onClick={handleSubmit}>
           Login
         </Button>
-        <Button color="success">Register</Button>
+        <Button color="success" href="/123">
+          Register
+        </Button>
       </Form>
     </div>
   );
