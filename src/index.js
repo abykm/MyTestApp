@@ -5,10 +5,11 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 import App from './App';
 
+const array = [1, 2];
 const routes = (
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App />} />
+      <Route path="/" element={<App array={...{...array}}/>} />
     </Routes>
   </BrowserRouter>
 );

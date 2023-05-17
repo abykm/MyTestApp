@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Button, Form, FormGroup, Input, Label } from 'reactstrap';
 
-export default function Login() {
+export default function Login(props) {
+  console.log(props);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   function handleSubmit(e) {
