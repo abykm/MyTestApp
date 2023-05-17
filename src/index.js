@@ -4,12 +4,14 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 
 import App from './App';
+import Hooktest from './Hooktest';
+// <Route path="/" element={<App array={...array}/>} />
 
 const array = [1, 2];
 const routes = (
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App array={...{...array}}/>} />
+      <Route path="/" element={<Hooktest />} />
     </Routes>
   </BrowserRouter>
 );
