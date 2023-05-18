@@ -5,13 +5,14 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 import App from './App';
 import Hooktest from './Hooktest';
+import Component_1 from './UseContextHook';
 // <Route path="/" element={<App array={...array}/>} />
 
 const array = [1, 2];
 const routes = (
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<Hooktest />} />
+      <Route path="/" element={<App name={'aby'} />} />
     </Routes>
   </BrowserRouter>
 );
