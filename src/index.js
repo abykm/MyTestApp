@@ -6,13 +6,15 @@ import 'bootstrap/dist/css/bootstrap.css';
 import App from './App';
 import Hooktest from './Hooktest';
 import Component_1 from './UseContextHook';
+import UseReucer from './UseReducer';
+import UseCallback from './UseCallback';
 // <Route path="/" element={<App array={...array}/>} />
 
 const array = [1, 2];
 const routes = (
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<App name={'aby'} />} />
+      <Route path="/" element={<UseCallback name={'aby'} />} />
     </Routes>
   </BrowserRouter>
 );
