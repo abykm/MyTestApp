@@ -14,7 +14,7 @@ const array = [1, 2];
 const routes = (
   <BrowserRouter>
     <Routes>
-      <Route path="/" element={<UseCallback name={'aby'} />} />
+      <Route path="/" element={<UseReucer name={'aby'} />} />
     </Routes>
   </BrowserRouter>
 );
